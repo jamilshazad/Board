@@ -12,7 +12,34 @@
 		043905C31E3FA3CA00AB32F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043905C11E3FA3CA00AB32F4 /* Main.storyboard */; };
 		043905C51E3FA3CA00AB32F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043905C41E3FA3CA00AB32F4 /* Assets.xcassets */; };
 		043905C81E3FA3CA00AB32F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043905C61E3FA3CA00AB32F4 /* LaunchScreen.storyboard */; };
+		8D3C18631E5DEAEA00DFCABB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C18621E5DEAEA00DFCABB /* KeyboardViewController.swift */; };
+		8D3C18671E5DEAEA00DFCABB /* MainBoardController.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8D3C18601E5DEAE900DFCABB /* MainBoardController.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D3C186E1E5E002B00DFCABB /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C186C1E5DED1600DFCABB /* KeyboardView.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D3C18651E5DEAEA00DFCABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043905B21E3FA3C900AB32F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D3C185F1E5DEAE900DFCABB;
+			remoteInfo = MainBoardController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D3C186B1E5DEAEA00DFCABB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8D3C18671E5DEAEA00DFCABB /* MainBoardController.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		043905BA1E3FA3CA00AB32F4 /* Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Board.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,21 @@
 		043905C41E3FA3CA00AB32F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043905C71E3FA3CA00AB32F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043905C91E3FA3CA00AB32F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3C18601E5DEAE900DFCABB /* MainBoardController.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MainBoardController.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3C18621E5DEAEA00DFCABB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		8D3C18641E5DEAEA00DFCABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3C186C1E5DED1600DFCABB /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		043905B71E3FA3C900AB32F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3C185D1E5DEAE900DFCABB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				043905BC1E3FA3CA00AB32F4 /* Board */,
+				8D3C18611E5DEAEA00DFCABB /* Keyboard */,
 				043905BB1E3FA3CA00AB32F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				043905BA1E3FA3CA00AB32F4 /* Board.app */,
+				8D3C18601E5DEAE900DFCABB /* MainBoardController.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +104,17 @@
 			path = Board;
 			sourceTree = "<group>";
 		};
+		8D3C18611E5DEAEA00DFCABB /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8D3C18621E5DEAEA00DFCABB /* KeyboardViewController.swift */,
+				8D3C186C1E5DED1600DFCABB /* KeyboardView.xib */,
+				8D3C18641E5DEAEA00DFCABB /* Info.plist */,
+			);
+			name = Keyboard;
+			path = MainBoardController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +125,34 @@
 				043905B61E3FA3C900AB32F4 /* Sources */,
 				043905B71E3FA3C900AB32F4 /* Frameworks */,
 				043905B81E3FA3C900AB32F4 /* Resources */,
+				8D3C186B1E5DEAEA00DFCABB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8D3C18661E5DEAEA00DFCABB /* PBXTargetDependency */,
 			);
 			name = Board;
 			productName = Board;
 			productReference = 043905BA1E3FA3CA00AB32F4 /* Board.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8D3C185F1E5DEAE900DFCABB /* MainBoardController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D3C186A1E5DEAEA00DFCABB /* Build configuration list for PBXNativeTarget "MainBoardController" */;
+			buildPhases = (
+				8D3C185C1E5DEAE900DFCABB /* Sources */,
+				8D3C185D1E5DEAE900DFCABB /* Frameworks */,
+				8D3C185E1E5DEAE900DFCABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MainBoardController;
+			productName = MainBoardController;
+			productReference = 8D3C18601E5DEAE900DFCABB /* MainBoardController.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +165,10 @@
 				ORGANIZATIONNAME = Shazad;
 				TargetAttributes = {
 					043905B91E3FA3C900AB32F4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8D3C185F1E5DEAE900DFCABB = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				043905B91E3FA3C900AB32F4 /* Board */,
+				8D3C185F1E5DEAE900DFCABB /* MainBoardController */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +204,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D3C185E1E5DEAE900DFCABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3C186E1E5E002B00DFCABB /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D3C185C1E5DEAE900DFCABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3C18631E5DEAEA00DFCABB /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D3C18661E5DEAEA00DFCABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D3C185F1E5DEAE900DFCABB /* MainBoardController */;
+			targetProxy = 8D3C18651E5DEAEA00DFCABB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		043905C11E3FA3CA00AB32F4 /* Main.storyboard */ = {
@@ -259,6 +358,7 @@
 		043905CD1E3FA3CA00AB32F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Board/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -271,11 +371,36 @@
 		043905CE1E3FA3CA00AB32F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Board/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shazad.Board;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8D3C18681E5DEAEA00DFCABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MainBoardController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shazad.Board.MainBoardController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8D3C18691E5DEAEA00DFCABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MainBoardController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Shazad.Board.MainBoardController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +422,15 @@
 			buildConfigurations = (
 				043905CD1E3FA3CA00AB32F4 /* Debug */,
 				043905CE1E3FA3CA00AB32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D3C186A1E5DEAEA00DFCABB /* Build configuration list for PBXNativeTarget "MainBoardController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3C18681E5DEAEA00DFCABB /* Debug */,
+				8D3C18691E5DEAEA00DFCABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

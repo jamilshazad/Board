@@ -12,9 +12,17 @@
 		043905C31E3FA3CA00AB32F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043905C11E3FA3CA00AB32F4 /* Main.storyboard */; };
 		043905C51E3FA3CA00AB32F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043905C41E3FA3CA00AB32F4 /* Assets.xcassets */; };
 		043905C81E3FA3CA00AB32F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043905C61E3FA3CA00AB32F4 /* LaunchScreen.storyboard */; };
-		8D3C18631E5DEAEA00DFCABB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C18621E5DEAEA00DFCABB /* KeyboardViewController.swift */; };
 		8D3C18671E5DEAEA00DFCABB /* MainBoardController.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8D3C18601E5DEAE900DFCABB /* MainBoardController.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8D3C186E1E5E002B00DFCABB /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C186C1E5DED1600DFCABB /* KeyboardView.xib */; };
+		8D3C18931E619A5300DFCABB /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C18921E619A5300DFCABB /* KeyboardView.xib */; };
+		8D3C18941E619A5300DFCABB /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C18921E619A5300DFCABB /* KeyboardView.xib */; };
+		8D3C18971E619A6C00DFCABB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C18961E619A6C00DFCABB /* KeyboardViewController.swift */; };
+		8D3C18981E619A6C00DFCABB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C18961E619A6C00DFCABB /* KeyboardViewController.swift */; };
+		8D3C189A1E619A8700DFCABB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C18991E619A8700DFCABB /* CustomCollectionViewCell.xib */; };
+		8D3C189B1E619A8700DFCABB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C18991E619A8700DFCABB /* CustomCollectionViewCell.xib */; };
+		8D3C189D1E619A9000DFCABB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C189C1E619A9000DFCABB /* CustomCollectionViewCell.swift */; };
+		8D3C189E1E619A9000DFCABB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C189C1E619A9000DFCABB /* CustomCollectionViewCell.swift */; };
+		8DEE40BE1E61B4C0002D0C50 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEE40BD1E61B4C0002D0C50 /* search.png */; };
+		8DEE40BF1E61B4C0002D0C50 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEE40BD1E61B4C0002D0C50 /* search.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +58,13 @@
 		043905C71E3FA3CA00AB32F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043905C91E3FA3CA00AB32F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D3C18601E5DEAE900DFCABB /* MainBoardController.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MainBoardController.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D3C18621E5DEAEA00DFCABB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		8D3C18641E5DEAEA00DFCABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D3C186C1E5DED1600DFCABB /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		8D3C18921E619A5300DFCABB /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		8D3C18951E619A6B00DFCABB /* MainBoardController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainBoardController-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D3C18961E619A6C00DFCABB /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		8D3C18991E619A8700DFCABB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D3C189C1E619A9000DFCABB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DEE40BD1E61B4C0002D0C50 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +119,13 @@
 		8D3C18611E5DEAEA00DFCABB /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				8D3C18621E5DEAEA00DFCABB /* KeyboardViewController.swift */,
-				8D3C186C1E5DED1600DFCABB /* KeyboardView.xib */,
+				8D3C18961E619A6C00DFCABB /* KeyboardViewController.swift */,
+				8D3C18921E619A5300DFCABB /* KeyboardView.xib */,
+				8D3C189C1E619A9000DFCABB /* CustomCollectionViewCell.swift */,
+				8D3C18991E619A8700DFCABB /* CustomCollectionViewCell.xib */,
 				8D3C18641E5DEAEA00DFCABB /* Info.plist */,
+				8D3C18951E619A6B00DFCABB /* MainBoardController-Bridging-Header.h */,
+				8DEE40BD1E61B4C0002D0C50 /* search.png */,
 			);
 			name = Keyboard;
 			path = MainBoardController;
@@ -170,6 +186,7 @@
 					};
 					8D3C185F1E5DEAE900DFCABB = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -199,7 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				043905C81E3FA3CA00AB32F4 /* LaunchScreen.storyboard in Resources */,
+				8DEE40BE1E61B4C0002D0C50 /* search.png in Resources */,
+				8D3C18931E619A5300DFCABB /* KeyboardView.xib in Resources */,
 				043905C51E3FA3CA00AB32F4 /* Assets.xcassets in Resources */,
+				8D3C189A1E619A8700DFCABB /* CustomCollectionViewCell.xib in Resources */,
 				043905C31E3FA3CA00AB32F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3C186E1E5E002B00DFCABB /* KeyboardView.xib in Resources */,
+				8D3C18941E619A5300DFCABB /* KeyboardView.xib in Resources */,
+				8DEE40BF1E61B4C0002D0C50 /* search.png in Resources */,
+				8D3C189B1E619A8700DFCABB /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				043905C01E3FA3CA00AB32F4 /* ViewController.swift in Sources */,
+				8D3C18971E619A6C00DFCABB /* KeyboardViewController.swift in Sources */,
 				043905BE1E3FA3CA00AB32F4 /* AppDelegate.swift in Sources */,
+				8D3C189D1E619A9000DFCABB /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3C18631E5DEAEA00DFCABB /* KeyboardViewController.swift in Sources */,
+				8D3C18981E619A6C00DFCABB /* KeyboardViewController.swift in Sources */,
+				8D3C189E1E619A9000DFCABB /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,11 +409,14 @@
 		8D3C18681E5DEAEA00DFCABB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MainBoardController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shazad.Board.MainBoardController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainBoardController/MainBoardController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -396,11 +424,13 @@
 		8D3C18691E5DEAEA00DFCABB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MainBoardController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shazad.Board.MainBoardController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainBoardController/MainBoardController-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -433,6 +463,7 @@
 				8D3C18691E5DEAEA00DFCABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

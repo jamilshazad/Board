@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="MainBoardController">
             <connections>
                 <outlet property="nextKeyboardButton" destination="8WY-Xs-pIH" id="VBZ-Qz-hKp"/>
+                <outlet property="uperMenueCollectionView" destination="ZGB-Mo-nM7" id="bRU-YQ-kNL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,6 +20,44 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFc-Q5-CXG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrO-UC-00D">
+                            <rect key="frame" x="5" y="5" width="30" height="40"/>
+                            <color key="backgroundColor" red="0.21306960692321086" green="0.30289202994903375" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="X3J-YJ-qT8"/>
+                            </constraints>
+                            <state key="normal" title="M"/>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ZGB-Mo-nM7">
+                            <rect key="frame" x="41" y="0.0" width="328" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dYi-kx-q2R">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Js7-zX-DOz"/>
+                                <outlet property="delegate" destination="-1" id="IsA-g0-Uwg"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ZGB-Mo-nM7" secondAttribute="trailing" constant="6" id="0Nw-xB-6dZ"/>
+                        <constraint firstItem="ZGB-Mo-nM7" firstAttribute="leading" secondItem="wrO-UC-00D" secondAttribute="trailing" constant="6" id="Bfc-a7-aze"/>
+                        <constraint firstItem="ZGB-Mo-nM7" firstAttribute="top" secondItem="aFc-Q5-CXG" secondAttribute="top" id="CMB-e5-qds"/>
+                        <constraint firstItem="wrO-UC-00D" firstAttribute="top" secondItem="aFc-Q5-CXG" secondAttribute="top" constant="5" id="Q8c-pt-MIS"/>
+                        <constraint firstAttribute="bottom" secondItem="wrO-UC-00D" secondAttribute="bottom" constant="5" id="QHI-wC-jNX"/>
+                        <constraint firstItem="wrO-UC-00D" firstAttribute="leading" secondItem="aFc-Q5-CXG" secondAttribute="leading" constant="5" id="Thl-lM-DnV"/>
+                        <constraint firstAttribute="height" constant="50" id="oqW-xq-ByH"/>
+                        <constraint firstAttribute="bottom" secondItem="ZGB-Mo-nM7" secondAttribute="bottom" id="ucP-Qq-2bl"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WY-Xs-pIH">
                     <rect key="frame" x="24" y="210" width="30" height="30"/>
                     <constraints>
@@ -30,12 +69,15 @@
             </subviews>
             <color key="backgroundColor" red="0.557971734319616" green="1" blue="0.59566540374366705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="aFc-Q5-CXG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="13g-01-sIi"/>
                 <constraint firstItem="8WY-Xs-pIH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="6eG-XR-I2O"/>
+                <constraint firstItem="aFc-Q5-CXG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G0o-TU-yTd"/>
+                <constraint firstAttribute="trailing" secondItem="aFc-Q5-CXG" secondAttribute="trailing" id="hnr-vm-si5"/>
                 <constraint firstAttribute="bottom" secondItem="8WY-Xs-pIH" secondAttribute="bottom" constant="10" id="k0N-6W-c9O"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="34.5" y="54"/>
+            <point key="canvasLocation" x="-116.5" y="27"/>
         </view>
     </objects>
 </document>
